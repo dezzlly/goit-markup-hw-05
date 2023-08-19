@@ -725,8 +725,16 @@ body {
   color: var(--white);
 }
 
+.email-input-footer::placeholder {
+  color: var(--white);
+}
+
+.email-input-footer:hover::placeholder,
+.email-input-footer:focus::placeholder {
+  color: #31d0aa;
+}
+
 .submit-btn-footer {
-  align-self: flex-end;
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -742,6 +750,11 @@ body {
   border: none;
   border-radius: 4px;
   padding: 8px 24px;
+}
+
+.submit-btn-footer:hover,
+.submit-btn-footer:focus {
+  background: var(--secondary-blue);
 }
 
 .icon-send {
@@ -815,4 +828,23 @@ body {
 .close-modal:hover .close-modal-icon,
 .close-modal:focus .close-modal-icon {
   fill: var(--white);
+}
+
+.modal-form {
+  position: absolute;
+  top: 72px;
+  left: 24px;
+  width: 360px;
+}
+
+.modal-form-title {
+  color: var(--main-color);
+  text-align: center;
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
 }
