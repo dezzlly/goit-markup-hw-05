@@ -920,6 +920,12 @@ body {
   margin-bottom: 24px;
 }
 
+.checkbox-input:checked .checbox-text.checbox-box {
+  background-color: var(--secondary-blue);
+  border: none;
+  fill: var(--secondary-white);
+}
+
 .checbox-text {
   display: block;
   font-size: 12px;
@@ -928,7 +934,7 @@ body {
   color: #8e8f99;
 }
 
-.checbox-link {
+.checbox-box {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -947,6 +953,7 @@ body {
 }
 
 .form-button {
+  margin: 0 auto;
   display: block;
   min-width: 169px;
   height: 56px;
@@ -960,4 +967,9 @@ body {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background: var(--secondary-blue);
 }
