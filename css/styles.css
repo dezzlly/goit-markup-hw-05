@@ -832,7 +832,7 @@ body {
 }
 
 .modal-form-title {
-  color: var(--main-color);
+  color: var(--secondary-color);
   text-align: center;
   /* Body Medium */
   font-family: Roboto;
@@ -862,6 +862,7 @@ body {
 
 .input-container {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .modal-icon {
@@ -882,5 +883,9 @@ body {
 }
 
 .modal-input-field:focus {
-  border-color: #4d5ae5;
+  border-color: var(--blue);
+}
+
+.modal-input-field:focus + .modal-icon {
+  fill: var(--blue);
 }
