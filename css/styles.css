@@ -920,7 +920,7 @@ body {
   margin-bottom: 24px;
 }
 
-.checkbox-input:checked .checbox-text.checbox-box {
+.checkbox-input:checked + .checbox-text > .checbox-box {
   background-color: var(--secondary-blue);
   border: none;
   fill: var(--secondary-white);
